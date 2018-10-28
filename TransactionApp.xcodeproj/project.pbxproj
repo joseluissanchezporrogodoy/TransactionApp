@@ -13,6 +13,8 @@
 		6F35C6C12186604A00DB45FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F35C6C02186604A00DB45FF /* Assets.xcassets */; };
 		6F35C6C42186604A00DB45FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F35C6C22186604A00DB45FF /* LaunchScreen.storyboard */; };
 		6F35C6CD2186615F00DB45FF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35C6CC2186615F00DB45FF /* Transaction.swift */; };
+		6F35C6D32186626400DB45FF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35C6D22186626400DB45FF /* Endpoints.swift */; };
+		6F35C6D5218662AF00DB45FF /* DownloadDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35C6D4218662AF00DB45FF /* DownloadDataInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6F35C6C32186604A00DB45FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F35C6C52186604A00DB45FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F35C6CC2186615F00DB45FF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		6F35C6D22186626400DB45FF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		6F35C6D4218662AF00DB45FF /* DownloadDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDataInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		6F35C6B82186604900DB45FF /* TransactionApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F35C6CE2186620000DB45FF /* Interactors */,
 				6F35C6CB2186613300DB45FF /* Model */,
 				6F35C6B92186604900DB45FF /* AppDelegate.swift */,
 				6F35C6BB2186604900DB45FF /* ViewController.swift */,
@@ -73,6 +78,23 @@
 				6F35C6CC2186615F00DB45FF /* Transaction.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F35C6CE2186620000DB45FF /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				6F35C6CF2186621C00DB45FF /* NetworkInteractor */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		6F35C6CF2186621C00DB45FF /* NetworkInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				6F35C6D22186626400DB45FF /* Endpoints.swift */,
+				6F35C6D4218662AF00DB45FF /* DownloadDataInteractor.swift */,
+			);
+			path = NetworkInteractor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +170,8 @@
 			files = (
 				6F35C6BC2186604900DB45FF /* ViewController.swift in Sources */,
 				6F35C6BA2186604900DB45FF /* AppDelegate.swift in Sources */,
+				6F35C6D32186626400DB45FF /* Endpoints.swift in Sources */,
+				6F35C6D5218662AF00DB45FF /* DownloadDataInteractor.swift in Sources */,
 				6F35C6CD2186615F00DB45FF /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
