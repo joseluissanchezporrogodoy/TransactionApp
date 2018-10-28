@@ -62,14 +62,12 @@
 		6F35C6B82186604900DB45FF /* TransactionApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F35C6B92186604900DB45FF /* AppDelegate.swift */,
 				6F35C6CE2186620000DB45FF /* Interactors */,
 				6F35C6CB2186613300DB45FF /* Model */,
-				6F35C6B92186604900DB45FF /* AppDelegate.swift */,
-				6F35C6BB2186604900DB45FF /* ViewController.swift */,
-				6F35C6BD2186604900DB45FF /* Main.storyboard */,
-				6F35C6D62186651E00DB45FF /* TableViewCell.swift */,
+				6F35C6D821866FB600DB45FF /* Controller */,
+				6F35C6D921866FDE00DB45FF /* View */,
 				6F35C6C02186604A00DB45FF /* Assets.xcassets */,
-				6F35C6C22186604A00DB45FF /* LaunchScreen.storyboard */,
 				6F35C6C52186604A00DB45FF /* Info.plist */,
 			);
 			path = TransactionApp;
@@ -98,6 +96,24 @@
 				6F35C6D4218662AF00DB45FF /* DownloadDataInteractor.swift */,
 			);
 			path = NetworkInteractor;
+			sourceTree = "<group>";
+		};
+		6F35C6D821866FB600DB45FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F35C6BB2186604900DB45FF /* ViewController.swift */,
+				6F35C6D62186651E00DB45FF /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F35C6D921866FDE00DB45FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F35C6BD2186604900DB45FF /* Main.storyboard */,
+				6F35C6C22186604A00DB45FF /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

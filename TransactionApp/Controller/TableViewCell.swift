@@ -12,6 +12,13 @@ class TableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var descrip: UILabel!
+    
+    @IBOutlet weak var date: UILabel!
+    
+    @IBOutlet weak var amount: UILabel!
+    
+    @IBOutlet weak var fee: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,7 +31,9 @@ class TableViewCell: UITableViewCell {
     }
     
     func configure(transaction: Transaction) {
-        self.descrip.text = transaction.description 
+        self.descrip.text = "Description: " + (transaction.description ?? "No desc")
+        self.date.text = "Date: " + (transaction.date ?? "No Date")
+        self.amount.text = "Amount: " + (String(transaction.amount ?? 0))
+        self.fee.text = "Fee: " + (String(transaction.fee ?? 0))
     }
-
 }
